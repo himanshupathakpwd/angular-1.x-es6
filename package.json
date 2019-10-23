@@ -6,21 +6,27 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "concurrently 'lite-server' 'webpack --watch'",
+    "start": "webpack-dev-server --open",
     "webpack": "webpack"
   },
   "dependencies": {
     "angular": "^1.7.8",
-    "angular-ui-router": "^1.0.23"
+    "angular-ui-router": "^1.0.23",
+    "ngreact": "^0.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
-    "concurrently": "^5.0.0",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "html-loader": "^0.5.5",
-    "lite-server": "^2.5.4",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
   }
 }
